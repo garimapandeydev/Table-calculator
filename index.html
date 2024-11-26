@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+        form{
+            text-align: center;
+            
+        }
+        div{
+            border: 4px;
+            text-align: center;
+        }
+        body{
+            text-align: center;
+        }
+        container{
+            text-align: center;
+           
+        }
+        coumnDiv{
+            border: 2px solid black;
+        }
+        .column {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 0px;
+            border: 2px solid rgb(42, 2, 137);
+            
+        }
+        .number{
+            display: inline-table;
+            width: 70px;
+            height: 70px;
+            border: 2px solid black;
+            align-items: center;
+            text-align:center;
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            flex-grow: 1;
+          
+        }
+       
+        .even{
+            background-color: rgb(176, 39, 39);
+        }
+        .odd{
+            background-color:rgb(255, 176, 127)
+        }
+        .prime{
+            background-color:rgb(135, 5, 152);
+        }
+    </style>
+</head>
+<body style="background-color:cadetblue ;">
+    <script src="script.js"></script>
+   <form onsubmit="return data() ">
+    Start Number: <input type="text" id="n1"><br>
+    End Number : <input type="text" id="n2"><br><br>
+    <input type="submit" value="SUBMIT">   
+    <div id="error-message" class="error-message"></div>
+    <div id="table-container"></div>
+</form>
+</body>
